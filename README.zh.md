@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="resources/icons/app-icon.png" alt="OpenGIS" width="120" />
+  <img src="resources/icons/app-icon.png" alt="GeoVela" width="120" />
 </p>
 
-<h1 align="center">OpenGIS</h1>
+<h1 align="center">GeoVela</h1>
 
 <p align="center">
   <strong>中文</strong> |
@@ -36,7 +36,7 @@
 
 <p align="center">
   <a href="https://youtu.be/F5lVRs_XXjU">
-    <img src="https://img.youtube.com/vi/F5lVRs_XXjU/maxresdefault.jpg" alt="OpenGIS 演示" width="600">
+    <img src="https://img.youtube.com/vi/F5lVRs_XXjU/maxresdefault.jpg" alt="GeoVela 演示" width="600">
     <br>
     <img src="https://img.shields.io/badge/▶_观看演示-red?style=for-the-badge" alt="观看演示">
   </a>
@@ -44,7 +44,7 @@
 
 ## 1. 介绍
 
-OpenGIS 是一个基于 Agent 的开源 GIS 桌面应用。它不是一个简单的"地图 + 聊天框"，而是一个把 **GIS 数据管理、地图渲染、空间分析、制图导出、工作流、后台 Worker、可复用 Operation、记忆系统和工具治理** 放在同一个桌面环境里的实验性 GIS Agent 客户端。
+GeoVela 是一个基于 Agent 的开源 GIS 桌面应用。它不是一个简单的"地图 + 聊天框"，而是一个把 **GIS 数据管理、地图渲染、空间分析、制图导出、工作流、后台 Worker、可复用 Operation、记忆系统和工具治理** 放在同一个桌面环境里的实验性 GIS Agent 客户端。
 
 项目仍在高速迭代中。当前目标不是替代 ArcGIS Pro / QGIS 的全部能力，而是探索一个更自然的 GIS 工作方式：用户用自然语言描述意图，Agent 在受控工具系统中读取数据、运行代码、调用地图能力、生成图表、沉淀脚本和 Operation，并把结果直接展示在地图、对话、看板或制图画布里。
 
@@ -115,7 +115,7 @@ OpenGIS 是一个基于 Agent 的开源 GIS 桌面应用。它不是一个简单
 
 ### 3.1 总体进程模型
 
-OpenGIS 是一个 **Electron 桌面壳 + React Renderer + Python Sidecar + Python 子进程 / Worker** 的混合架构：
+GeoVela 是一个 **Electron 桌面壳 + React Renderer + Python Sidecar + Python 子进程 / Worker** 的混合架构：
 
 ```text
 Electron Main
@@ -199,7 +199,7 @@ AgentProfile
 
 #### 3.3.1 Function-call 优先
 
-OpenGIS 现在以 function call 为 Agent 主路径。模型输出结构化 tool call，框架按 schema 执行工具并返回结构化结果。Python 代码执行仍是一个工具，但不再作为 loop 控制协议。
+GeoVela 现在以 function call 为 Agent 主路径。模型输出结构化 tool call，框架按 schema 执行工具并返回结构化结果。Python 代码执行仍是一个工具，但不再作为 loop 控制协议。
 
 这样做解决旧 CodeAct 的几个问题：
 
@@ -365,7 +365,7 @@ operation/
 
 Operation 分两类：
 
-- **内置 Operation**：随 OpenGIS 源码分发，所有 workspace 共享。
+- **内置 Operation**：随 GeoVela 源码分发，所有 workspace 共享。
 - **Workspace Operation**：用户项目中创建，可手动提升为内置。
 
 Agent 可以：
@@ -391,7 +391,7 @@ Worker 服务包结构：
 ```text
 worker/<name>-<worker_id>/
   main.py              # 唯一入口
-  opengis_worker.py    # OpenGIS 自动生成 helper，不应手改
+  opengis_worker.py    # GeoVela 自动生成 helper，不应手改
   config.json          # worker_id、interval_seconds、layer ids、API 参数
   manifest.json        # 服务元数据、权限、动态层声明
   README.md
@@ -401,7 +401,7 @@ worker/<name>-<worker_id>/
   src/
     datasource.py      # 数据获取
     service.py         # 状态和业务逻辑
-    publisher.py       # OpenGIS 输出适配
+    publisher.py       # GeoVela 输出适配
 ```
 
 动态地图协议：
@@ -468,7 +468,7 @@ Worker manager 解析 stdout，补充 `worker_id`、`worker_name`、`workspace_p
 - **样式编辑**：支持 ramp、custom stops、source value stops、透明度、stretch min/max。
 - **Agent 感知**：`get_raster_info` 可让 Agent 读取宽高、波段、统计值、色带状态。
 
-主流 WebGIS 通常将服务端栅格渲染为 PNG / JPEG 瓦片或 Cloud Optimized GeoTIFF 窗口读取。OpenGIS 当前以 PNG 瓦片和 image source 为主，后续可继续增强 COG / 金字塔 / overviews。
+主流 WebGIS 通常将服务端栅格渲染为 PNG / JPEG 瓦片或 Cloud Optimized GeoTIFF 窗口读取。GeoVela 当前以 PNG 瓦片和 image source 为主，后续可继续增强 COG / 金字塔 / overviews。
 
 ### 3.13 Layout Composer
 
@@ -485,7 +485,7 @@ Layout Composer 是面向制图导出的画布系统，目标对标 ArcGIS / QGI
 
 ### 3.14 权限与安全
 
-OpenGIS 不是强沙箱产品，但提供多层安全网：
+GeoVela 不是强沙箱产品，但提供多层安全网：
 
 | 层 | 机制 |
 |---|---|
@@ -500,7 +500,7 @@ OpenGIS 不是强沙箱产品，但提供多层安全网：
 ### 3.15 项目目录
 
 ```text
-OpenGIS/
+GeoVela/
   electron/                         # Electron main / preload
   src/
     features/
@@ -548,7 +548,7 @@ OpenGIS/
 
 ```bash
 git clone <repo-url>
-cd OpenGIS
+cd GeoVela
 ```
 
 ### 4.3 安装前端依赖
@@ -611,7 +611,7 @@ npm run dev:electron
 
 ### 4.7 打开 Workspace
 
-通过 File / Open Workspace 选择项目目录。OpenGIS 会在 workspace 下创建 `.opengis/`：
+通过 File / Open Workspace 选择项目目录。GeoVela 会在 workspace 下创建 `.opengis/`：
 
 ```text
 .opengis/
@@ -738,4 +738,4 @@ src/publisher.py     # emit_dynamic_points / emit_moving_objects
 
 ---
 
-OpenGIS 仍在快速变化中。README 描述的是当前主干架构、核心实现路径和近期演进方向；如果代码和文档出现轻微差异，以代码和测试为准。
+GeoVela 仍在快速变化中。README 描述的是当前主干架构、核心实现路径和近期演进方向；如果代码和文档出现轻微差异，以代码和测试为准。

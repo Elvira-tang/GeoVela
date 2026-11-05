@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="resources/icons/app-icon.png" alt="OpenGIS" width="120" />
+  <img src="resources/icons/app-icon.png" alt="GeoVela" width="120" />
 </p>
 
-<h1 align="center">OpenGIS</h1>
+<h1 align="center">GeoVela</h1>
 
 <p align="center">
   <a href="README.zh.md">中文</a> |
@@ -36,7 +36,7 @@
 
 <p align="center">
   <a href="https://youtu.be/F5lVRs_XXjU">
-    <img src="https://img.youtube.com/vi/F5lVRs_XXjU/maxresdefault.jpg" alt="OpenGIS Demo" width="600">
+    <img src="https://img.youtube.com/vi/F5lVRs_XXjU/maxresdefault.jpg" alt="GeoVela Demo" width="600">
     <br>
     <img src="https://img.shields.io/badge/▶_Watch_Demo-red?style=for-the-badge" alt="Watch Demo">
   </a>
@@ -44,7 +44,7 @@
 
 ## 1. Introduction
 
-OpenGIS is an Agent-based open-source GIS desktop application. It is not a simple "map + chat box" — it brings **GIS data management, map rendering, spatial analysis, cartographic export, workflows, background workers, reusable operations, memory systems, and tool governance** together in a single desktop environment.
+GeoVela is an Agent-based open-source GIS desktop application. It is not a simple "map + chat box" — it brings **GIS data management, map rendering, spatial analysis, cartographic export, workflows, background workers, reusable operations, memory systems, and tool governance** together in a single desktop environment.
 
 The project is under active development. The current goal is not to replace all capabilities of ArcGIS Pro / QGIS, but to explore a more natural way of working with GIS: users describe intent in natural language, and the Agent reads data, runs code, calls map capabilities, generates charts, accumulates scripts and Operations within a governed tool system — with results displayed directly on the map, in chat, dashboards, or the cartographic canvas.
 
@@ -115,7 +115,7 @@ The project is under active development. The current goal is not to replace all 
 
 ### 3.1 Process Model
 
-OpenGIS uses a hybrid architecture of **Electron shell + React Renderer + Python Sidecar + Python subprocess / Worker**:
+GeoVela uses a hybrid architecture of **Electron shell + React Renderer + Python Sidecar + Python subprocess / Worker**:
 
 ```text
 Electron Main
@@ -199,7 +199,7 @@ AgentProfile
 
 #### 3.3.1 Function-call First
 
-OpenGIS now uses function calls as the primary Agent path. The model outputs structured tool calls, and the framework executes tools by schema and returns structured results. Python code execution remains a tool but is no longer the loop control protocol.
+GeoVela now uses function calls as the primary Agent path. The model outputs structured tool calls, and the framework executes tools by schema and returns structured results. Python code execution remains a tool but is no longer the loop control protocol.
 
 This addresses several issues from the old CodeAct:
 
@@ -365,7 +365,7 @@ operation/
 
 Two types of Operations:
 
-- **Built-in Operations**: Shipped with OpenGIS source, shared across all workspaces.
+- **Built-in Operations**: Shipped with GeoVela source, shared across all workspaces.
 - **Workspace Operations**: Created in user projects, can be promoted to built-in.
 
 The Agent can:
@@ -391,7 +391,7 @@ Worker service package structure:
 ```text
 worker/<name>-<worker_id>/
   main.py              # Single entry point
-  opengis_worker.py    # Auto-generated OpenGIS helper, should not be manually edited
+  opengis_worker.py    # Auto-generated GeoVela helper, should not be manually edited
   config.json          # worker_id, interval_seconds, layer ids, API parameters
   manifest.json        # Service metadata, permissions, dynamic layer declarations
   README.md
@@ -401,7 +401,7 @@ worker/<name>-<worker_id>/
   src/
     datasource.py      # Data fetching
     service.py         # State and business logic
-    publisher.py       # OpenGIS output adapter
+    publisher.py       # GeoVela output adapter
 ```
 
 Dynamic map protocol:
@@ -468,7 +468,7 @@ Raster loading uses a hybrid frontend/backend strategy:
 - **Style editing**: Supports ramp, custom stops, source value stops, transparency, and stretch min/max.
 - **Agent awareness**: `get_raster_info` lets the Agent read dimensions, bands, statistics, and color ramp state.
 
-Mainstream WebGIS typically renders server-side rasters as PNG / JPEG tiles or Cloud Optimized GeoTIFF window reads. OpenGIS currently uses PNG tiles and image sources, with potential future enhancement for COG / pyramids / overviews.
+Mainstream WebGIS typically renders server-side rasters as PNG / JPEG tiles or Cloud Optimized GeoTIFF window reads. GeoVela currently uses PNG tiles and image sources, with potential future enhancement for COG / pyramids / overviews.
 
 ### 3.13 Layout Composer
 
@@ -485,7 +485,7 @@ Current implementation is in `src/features/layout-composer/`.
 
 ### 3.14 Permissions & Security
 
-OpenGIS is not a hard sandbox product, but provides multiple safety layers:
+GeoVela is not a hard sandbox product, but provides multiple safety layers:
 
 | Layer | Mechanism |
 |---|---|
@@ -500,7 +500,7 @@ OpenGIS is not a hard sandbox product, but provides multiple safety layers:
 ### 3.15 Project Directory
 
 ```text
-OpenGIS/
+GeoVela/
   electron/                         # Electron main / preload
   src/
     features/
@@ -548,7 +548,7 @@ OpenGIS/
 
 ```bash
 git clone <repo-url>
-cd OpenGIS
+cd GeoVela
 ```
 
 ### 4.3 Install Frontend Dependencies
@@ -611,7 +611,7 @@ Click Test Connection to verify. After saving, send "hello" to the Agent; seeing
 
 ### 4.7 Open a Workspace
 
-Use File / Open Workspace to select a project directory. OpenGIS creates `.opengis/` under the workspace:
+Use File / Open Workspace to select a project directory. GeoVela creates `.opengis/` under the workspace:
 
 ```text
 .opengis/
@@ -738,4 +738,4 @@ This project is licensed under the **MIT License**.
 
 ---
 
-OpenGIS is under active development. This README describes the current mainline architecture, core implementation paths, and near-term evolution direction. If there are minor discrepancies between code and documentation, the code and tests are authoritative.
+GeoVela is under active development. This README describes the current mainline architecture, core implementation paths, and near-term evolution direction. If there are minor discrepancies between code and documentation, the code and tests are authoritative.
