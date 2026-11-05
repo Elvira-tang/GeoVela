@@ -43,7 +43,7 @@ import { useSettingsStore } from '@/stores/settingsStore'
 import { useViewStore, type ViewTab } from '@/stores/viewStore'
 import { useScriptRunner, type OutputChunk } from './useScriptRunner'
 
-const DEFAULT_SCRIPT = `# OpenGIS Script Runner
+const DEFAULT_SCRIPT = `# GeoVela Script Runner
 # ----------------------------------------------------------------------
 # This script runs in the same subprocess sandbox that the AI agent uses.
 # All registered tools are available as top-level functions.
@@ -66,7 +66,7 @@ const DEFAULT_SCRIPT = `# OpenGIS Script Runner
 # layer_id = add_layer_from_geojson(name="demo", geojson=points)
 # print("added", layer_id)
 
-print("hello from opengis script runner")
+print("hello from GeoVela script runner")
 `
 
 export interface ScriptRunnerViewProps {
