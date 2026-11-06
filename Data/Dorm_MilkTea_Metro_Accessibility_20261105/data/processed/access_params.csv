@@ -1,0 +1,6 @@
+﻿参数,取值,说明
+walk_speed_m_min,75,步行速度
+station_access_min,2,进出站固定时间
+transfer_walk_min,3,站内换乘步行时间（与 metro_edges 换乘边一致）
+train_speed_km_h,35,地铁商业运行速度（travel_time 估算依据）
+max_walk_to_station_m,1500,宿舍-地铁站步行接驳上限

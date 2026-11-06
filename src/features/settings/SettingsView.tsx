@@ -1460,9 +1460,8 @@ export function SettingsView() {
                     />
                   </SettingItem>
 
-                  {/* 3D mode is feature-gated. Keep the control visible so the
-                      future release has a stable entry point, but do not allow
-                      it to mutate state yet. */}
+                  {/* 3D mode controls the oblique camera preset and exposes
+                      the Agent's 3D camera/extrusion tool pack. */}
                   <SettingItem
                     id="appearance-3d-mode"
                     label={t.settings.threeDMode}
@@ -1471,10 +1470,12 @@ export function SettingsView() {
                     <SettingCheckbox
                       id="appearance-3d-mode"
                       checked={THREE_D_MODE_AVAILABLE && appearance.enable3DMode}
-                      onChange={() => {}}
-                      disabled
-                      title={t.settings.threeDModeComingSoon}
-                      label={t.settings.threeDModeComingSoon}
+                      onChange={(checked) => {
+                        setAppearance({ enable3DMode: checked })
+                        mapEngine.setPreset3DMode(checked)
+                      }}
+                      disabled={!THREE_D_MODE_AVAILABLE}
+                      title={THREE_D_MODE_AVAILABLE ? undefined : t.settings.threeDModeComingSoon}
                     />
                   </SettingItem>
 

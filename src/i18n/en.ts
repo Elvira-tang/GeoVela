@@ -360,7 +360,7 @@ export const en = {
     showMapLabels: 'Map Labels',
     showMapLabelsDesc: 'Show text labels on the basemap.',
     threeDMode: '3D Mode',
-    threeDModeDesc: 'Reserved feature flag, disabled by default. Enables 3D view and layer extrusion when released.',
+    threeDModeDesc: 'Enable the 3D camera and allow the Agent to extrude building layers.',
     threeDModeComingSoon: '3D capabilities are not available yet',
     customTileUrl: 'Custom Tile URL',
     customTileUrlDesc: 'Use a custom XYZ tile URL as the basemap.',

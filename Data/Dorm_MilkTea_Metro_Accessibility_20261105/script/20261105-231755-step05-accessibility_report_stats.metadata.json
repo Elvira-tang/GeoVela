@@ -1,0 +1,14 @@
+{
+  "run_id": "d2fe2b18",
+  "step": 5,
+  "timestamp": "2026-11-05T23:17:55",
+  "semantic_name": "accessibility_report_stats",
+  "script_path": "D:\\Study\\大三\\申威高级语言编译与程序设计\\GIS\\GeoVela\\Data\\Dorm_MilkTea_Metro_Accessibility_20261105\\script\\20261105-231755-step05-accessibility_report_stats.py",
+  "user_message": "基于以上workflow做分析报告",
+  "has_error": false,
+  "description": "汇总可达性结果统计指标（总体/宿舍/POI分级/线路/品牌），导出 output/report/stats.json 并复制图表到 output/report/figures。",
+  "persist_requested": true,
+  "workflow": null,
+  "loop_kind": "chat",
+  "tool_call_id": "call_00_kiQXjqDcaA1uqLF8sBTm3632"
+}

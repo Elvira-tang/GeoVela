@@ -29,12 +29,15 @@ win:
     - nsis
     - portable
   icon: resources/icons/app-icon.png
-  artifactName: "${productName}-${version}-win-${arch}.${ext}"
 
 nsis:
+  artifactName: "${productName}-${version}-win-${arch}-setup.${ext}"
   oneClick: false
   allowToChangeInstallationDirectory: true
   createDesktopShortcut: true
+
+portable:
+  artifactName: "${productName}-${version}-win-${arch}-portable.${ext}"
 
 mac:
   target:

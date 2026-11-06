@@ -1,0 +1,11 @@
+# >>> opengis <<<
+# Managed by OpenGIS WorkspaceManager — edit between the markers
+# with care; the block is matched by its fences.
+.opengis/runs/
+.opengis/conversations/
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+# <<< opengis >>>

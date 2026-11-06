@@ -1,0 +1,214 @@
+{
+  "model": {
+    "provider": "openai",
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com"
+  },
+  "tasks": [
+    "campus-summary",
+    "milktea-summary",
+    "accessibility-minimum"
+  ],
+  "details": [
+    {
+      "candidate": "baseline",
+      "task_id": "campus-summary",
+      "passed": true,
+      "total_tokens": 79980,
+      "latency_ms": 30373.623300001782,
+      "tool_calls": 14,
+      "errors": 0,
+      "workspace": "D:\\Study\\大三\\申威高级语言编译与程序设计\\GIS\\GeoVela\\benchmark-results\\harness-pro-lite-20261106\\baseline\\campus-summary",
+      "validation_error": "",
+      "agent_error": ""
+    },
+    {
+      "candidate": "baseline",
+      "task_id": "milktea-summary",
+      "passed": true,
+      "total_tokens": 56321,
+      "latency_ms": 10772.590199994738,
+      "tool_calls": 8,
+      "errors": 0,
+      "workspace": "D:\\Study\\大三\\申威高级语言编译与程序设计\\GIS\\GeoVela\\benchmark-results\\harness-pro-lite-20261106\\baseline\\milktea-summary",
+      "validation_error": "",
+      "agent_error": ""
+    },
+    {
+      "candidate": "baseline",
+      "task_id": "accessibility-minimum",
+      "passed": true,
+      "total_tokens": 39296,
+      "latency_ms": 7662.025300000096,
+      "tool_calls": 6,
+      "errors": 0,
+      "workspace": "D:\\Study\\大三\\申威高级语言编译与程序设计\\GIS\\GeoVela\\benchmark-results\\harness-pro-lite-20261106\\baseline\\accessibility-minimum",
+      "validation_error": "",
+      "agent_error": ""
+    },
+    {
+      "candidate": "lite",
+      "task_id": "campus-summary",
+      "passed": true,
+      "total_tokens": 62494,
+      "latency_ms": 8335.186500000418,
+      "tool_calls": 6,
+      "errors": 0,
+      "workspace": "D:\\Study\\大三\\申威高级语言编译与程序设计\\GIS\\GeoVela\\benchmark-results\\harness-pro-lite-20261106\\lite\\campus-summary",
+      "validation_error": "",
+      "agent_error": ""
+    },
+    {
+      "candidate": "lite",
+      "task_id": "milktea-summary",
+      "passed": true,
+      "total_tokens": 39522,
+      "latency_ms": 8709.150599999703,
+      "tool_calls": 6,
+      "errors": 0,
+      "workspace": "D:\\Study\\大三\\申威高级语言编译与程序设计\\GIS\\GeoVela\\benchmark-results\\harness-pro-lite-20261106\\lite\\milktea-summary",
+      "validation_error": "",
+      "agent_error": ""
+    },
+    {
+      "candidate": "lite",
+      "task_id": "accessibility-minimum",
+      "passed": true,
+      "total_tokens": 39252,
+      "latency_ms": 7502.034799996181,
+      "tool_calls": 6,
+      "errors": 0,
+      "workspace": "D:\\Study\\大三\\申威高级语言编译与程序设计\\GIS\\GeoVela\\benchmark-results\\harness-pro-lite-20261106\\lite\\accessibility-minimum",
+      "validation_error": "",
+      "agent_error": ""
+    },
+    {
+      "candidate": "medium",
+      "task_id": "campus-summary",
+      "passed": true,
+      "total_tokens": 62550,
+      "latency_ms": 8072.155299996666,
+      "tool_calls": 6,
+      "errors": 0,
+      "workspace": "D:\\Study\\大三\\申威高级语言编译与程序设计\\GIS\\GeoVela\\benchmark-results\\harness-pro-lite-20261106\\medium\\campus-summary",
+      "validation_error": "",
+      "agent_error": ""
+    },
+    {
+      "candidate": "medium",
+      "task_id": "milktea-summary",
+      "passed": true,
+      "total_tokens": 47804,
+      "latency_ms": 9593.809199999669,
+      "tool_calls": 6,
+      "errors": 0,
+      "workspace": "D:\\Study\\大三\\申威高级语言编译与程序设计\\GIS\\GeoVela\\benchmark-results\\harness-pro-lite-20261106\\medium\\milktea-summary",
+      "validation_error": "",
+      "agent_error": ""
+    },
+    {
+      "candidate": "medium",
+      "task_id": "accessibility-minimum",
+      "passed": true,
+      "total_tokens": 39305,
+      "latency_ms": 7932.091000002401,
+      "tool_calls": 6,
+      "errors": 0,
+      "workspace": "D:\\Study\\大三\\申威高级语言编译与程序设计\\GIS\\GeoVela\\benchmark-results\\harness-pro-lite-20261106\\medium\\accessibility-minimum",
+      "validation_error": "",
+      "agent_error": ""
+    },
+    {
+      "candidate": "heavy",
+      "task_id": "campus-summary",
+      "passed": true,
+      "total_tokens": 52949,
+      "latency_ms": 8754.867000003287,
+      "tool_calls": 6,
+      "errors": 0,
+      "workspace": "D:\\Study\\大三\\申威高级语言编译与程序设计\\GIS\\GeoVela\\benchmark-results\\harness-pro-lite-20261106\\heavy\\campus-summary",
+      "validation_error": "",
+      "agent_error": ""
+    },
+    {
+      "candidate": "heavy",
+      "task_id": "milktea-summary",
+      "passed": true,
+      "total_tokens": 48648,
+      "latency_ms": 9161.294999998063,
+      "tool_calls": 6,
+      "errors": 0,
+      "workspace": "D:\\Study\\大三\\申威高级语言编译与程序设计\\GIS\\GeoVela\\benchmark-results\\harness-pro-lite-20261106\\heavy\\milktea-summary",
+      "validation_error": "",
+      "agent_error": ""
+    },
+    {
+      "candidate": "heavy",
+      "task_id": "accessibility-minimum",
+      "passed": true,
+      "total_tokens": 45244,
+      "latency_ms": 7744.358199997805,
+      "tool_calls": 6,
+      "errors": 0,
+      "workspace": "D:\\Study\\大三\\申威高级语言编译与程序设计\\GIS\\GeoVela\\benchmark-results\\harness-pro-lite-20261106\\heavy\\accessibility-minimum",
+      "validation_error": "",
+      "agent_error": ""
+    }
+  ],
+  "evolution": {
+    "baseline": "baseline",
+    "performance_floor": 1.0,
+    "metrics": [
+      {
+        "candidate": "baseline",
+        "task_count": 3,
+        "pass_rate": 1.0,
+        "mean_tokens": 58532.333333333336,
+        "mean_latency_ms": 16269.412933332205,
+        "mean_tool_calls": 9.333333333333334,
+        "mean_errors": 0.0
+      },
+      {
+        "candidate": "heavy",
+        "task_count": 3,
+        "pass_rate": 1.0,
+        "mean_tokens": 48947.0,
+        "mean_latency_ms": 8553.506733333052,
+        "mean_tool_calls": 6.0,
+        "mean_errors": 0.0
+      },
+      {
+        "candidate": "lite",
+        "task_count": 3,
+        "pass_rate": 1.0,
+        "mean_tokens": 47089.333333333336,
+        "mean_latency_ms": 8182.123966665434,
+        "mean_tool_calls": 6.0,
+        "mean_errors": 0.0
+      },
+      {
+        "candidate": "medium",
+        "task_count": 3,
+        "pass_rate": 1.0,
+        "mean_tokens": 49886.333333333336,
+        "mean_latency_ms": 8532.685166666246,
+        "mean_tool_calls": 6.0,
+        "mean_errors": 0.0
+      }
+    ],
+    "eligible": [
+      "baseline",
+      "heavy",
+      "lite",
+      "medium"
+    ],
+    "pareto_frontier": [
+      "lite"
+    ],
+    "selected": {
+      "lite": "lite",
+      "medium": "lite",
+      "heavy": "lite"
+    }
+  }
+}

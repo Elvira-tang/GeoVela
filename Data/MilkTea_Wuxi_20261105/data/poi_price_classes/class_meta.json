@@ -1,0 +1,65 @@
+[
+  {
+    "file": "D:\\Study\\大三\\申威高级语言编译与程序设计\\GIS\\GeoVela\\Data\\MilkTea_Wuxi_20261105\\data\\poi_price_classes\\class_00_unknown.geojson",
+    "label": "价格未知",
+    "color": "#b0b0b0",
+    "opacity": 0.35,
+    "count": 83
+  },
+  {
+    "file": "D:\\Study\\大三\\申威高级语言编译与程序设计\\GIS\\GeoVela\\Data\\MilkTea_Wuxi_20261105\\data\\poi_price_classes\\class_01.geojson",
+    "label": "5-8 元",
+    "color": "#fee391",
+    "opacity": 0.4,
+    "count": 238
+  },
+  {
+    "file": "D:\\Study\\大三\\申威高级语言编译与程序设计\\GIS\\GeoVela\\Data\\MilkTea_Wuxi_20261105\\data\\poi_price_classes\\class_02.geojson",
+    "label": "8-12 元",
+    "color": "#fec44f",
+    "opacity": 0.48,
+    "count": 94
+  },
+  {
+    "file": "D:\\Study\\大三\\申威高级语言编译与程序设计\\GIS\\GeoVela\\Data\\MilkTea_Wuxi_20261105\\data\\poi_price_classes\\class_03.geojson",
+    "label": "12-15 元",
+    "color": "#fe9929",
+    "opacity": 0.56,
+    "count": 397
+  },
+  {
+    "file": "D:\\Study\\大三\\申威高级语言编译与程序设计\\GIS\\GeoVela\\Data\\MilkTea_Wuxi_20261105\\data\\poi_price_classes\\class_04.geojson",
+    "label": "15-18 元",
+    "color": "#ec7014",
+    "opacity": 0.65,
+    "count": 412
+  },
+  {
+    "file": "D:\\Study\\大三\\申威高级语言编译与程序设计\\GIS\\GeoVela\\Data\\MilkTea_Wuxi_20261105\\data\\poi_price_classes\\class_05.geojson",
+    "label": "18-22 元",
+    "color": "#cc4c02",
+    "opacity": 0.74,
+    "count": 300
+  },
+  {
+    "file": "D:\\Study\\大三\\申威高级语言编译与程序设计\\GIS\\GeoVela\\Data\\MilkTea_Wuxi_20261105\\data\\poi_price_classes\\class_06.geojson",
+    "label": "22-30 元",
+    "color": "#ad3700",
+    "opacity": 0.83,
+    "count": 95
+  },
+  {
+    "file": "D:\\Study\\大三\\申威高级语言编译与程序设计\\GIS\\GeoVela\\Data\\MilkTea_Wuxi_20261105\\data\\poi_price_classes\\class_07.geojson",
+    "label": "30-60 元",
+    "color": "#8c2d04",
+    "opacity": 0.9,
+    "count": 25
+  },
+  {
+    "file": "D:\\Study\\大三\\申威高级语言编译与程序设计\\GIS\\GeoVela\\Data\\MilkTea_Wuxi_20261105\\data\\poi_price_classes\\class_08.geojson",
+    "label": "60-430 元",
+    "color": "#662506",
+    "opacity": 0.97,
+    "count": 10
+  }
+]

@@ -13,9 +13,8 @@ export interface ModelPreset {
   baseURL: string
 }
 
-// Release gate for the reserved 3D capability. Keep this false until the
-// renderer, UI, and agent tool contract are intentionally released together.
-export const THREE_D_MODE_AVAILABLE = false
+// Release gate for the 3D camera and polygon extrusion capabilities.
+export const THREE_D_MODE_AVAILABLE = true
 
 interface SettingsState {
   model: {

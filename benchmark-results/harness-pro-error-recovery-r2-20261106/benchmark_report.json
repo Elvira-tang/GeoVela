@@ -1,0 +1,165 @@
+{
+  "model": {
+    "provider": "openai",
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com"
+  },
+  "tasks": [
+    "error-recovery"
+  ],
+  "suite": "complex",
+  "repeats": 2,
+  "details": [
+    {
+      "candidate": "baseline",
+      "task_id": "error-recovery#repeat-1",
+      "passed": true,
+      "total_tokens": 53283,
+      "latency_ms": 23141.85759999964,
+      "tool_calls": 8,
+      "errors": 0,
+      "workspace": "benchmark-results/harness-pro-error-recovery-r2-20261106/baseline/error-recovery/repeat-1",
+      "validation_error": "",
+      "agent_error": ""
+    },
+    {
+      "candidate": "baseline",
+      "task_id": "error-recovery#repeat-2",
+      "passed": true,
+      "total_tokens": 120823,
+      "latency_ms": 29113.44570000074,
+      "tool_calls": 20,
+      "errors": 0,
+      "workspace": "benchmark-results/harness-pro-error-recovery-r2-20261106/baseline/error-recovery/repeat-2",
+      "validation_error": "",
+      "agent_error": ""
+    },
+    {
+      "candidate": "lite",
+      "task_id": "error-recovery#repeat-1",
+      "passed": false,
+      "total_tokens": 23199,
+      "latency_ms": 9421.195000002626,
+      "tool_calls": 4,
+      "errors": 0,
+      "workspace": "benchmark-results/harness-pro-error-recovery-r2-20261106/lite/error-recovery/repeat-1",
+      "validation_error": "result.json missing",
+      "agent_error": ""
+    },
+    {
+      "candidate": "lite",
+      "task_id": "error-recovery#repeat-2",
+      "passed": true,
+      "total_tokens": 71260,
+      "latency_ms": 15556.692600002862,
+      "tool_calls": 8,
+      "errors": 0,
+      "workspace": "benchmark-results/harness-pro-error-recovery-r2-20261106/lite/error-recovery/repeat-2",
+      "validation_error": "",
+      "agent_error": ""
+    },
+    {
+      "candidate": "medium",
+      "task_id": "error-recovery#repeat-1",
+      "passed": true,
+      "total_tokens": 83773,
+      "latency_ms": 21652.279400004772,
+      "tool_calls": 10,
+      "errors": 0,
+      "workspace": "benchmark-results/harness-pro-error-recovery-r2-20261106/medium/error-recovery/repeat-1",
+      "validation_error": "",
+      "agent_error": ""
+    },
+    {
+      "candidate": "medium",
+      "task_id": "error-recovery#repeat-2",
+      "passed": true,
+      "total_tokens": 98172,
+      "latency_ms": 18433.54520000139,
+      "tool_calls": 12,
+      "errors": 0,
+      "workspace": "benchmark-results/harness-pro-error-recovery-r2-20261106/medium/error-recovery/repeat-2",
+      "validation_error": "",
+      "agent_error": ""
+    },
+    {
+      "candidate": "heavy",
+      "task_id": "error-recovery#repeat-1",
+      "passed": true,
+      "total_tokens": 158094,
+      "latency_ms": 36594.460499996785,
+      "tool_calls": 20,
+      "errors": 0,
+      "workspace": "benchmark-results/harness-pro-error-recovery-r2-20261106/heavy/error-recovery/repeat-1",
+      "validation_error": "",
+      "agent_error": ""
+    },
+    {
+      "candidate": "heavy",
+      "task_id": "error-recovery#repeat-2",
+      "passed": true,
+      "total_tokens": 154058,
+      "latency_ms": 39170.31380000117,
+      "tool_calls": 22,
+      "errors": 0,
+      "workspace": "benchmark-results/harness-pro-error-recovery-r2-20261106/heavy/error-recovery/repeat-2",
+      "validation_error": "",
+      "agent_error": ""
+    }
+  ],
+  "evolution": {
+    "baseline": "baseline",
+    "performance_floor": 1.0,
+    "metrics": [
+      {
+        "candidate": "baseline",
+        "task_count": 2,
+        "pass_rate": 1.0,
+        "mean_tokens": 87053.0,
+        "mean_latency_ms": 26127.65165000019,
+        "mean_tool_calls": 14.0,
+        "mean_errors": 0.0
+      },
+      {
+        "candidate": "heavy",
+        "task_count": 2,
+        "pass_rate": 1.0,
+        "mean_tokens": 156076.0,
+        "mean_latency_ms": 37882.38714999898,
+        "mean_tool_calls": 21.0,
+        "mean_errors": 0.0
+      },
+      {
+        "candidate": "lite",
+        "task_count": 2,
+        "pass_rate": 0.5,
+        "mean_tokens": 47229.5,
+        "mean_latency_ms": 12488.943800002744,
+        "mean_tool_calls": 6.0,
+        "mean_errors": 0.0
+      },
+      {
+        "candidate": "medium",
+        "task_count": 2,
+        "pass_rate": 1.0,
+        "mean_tokens": 90972.5,
+        "mean_latency_ms": 20042.91230000308,
+        "mean_tool_calls": 11.0,
+        "mean_errors": 0.0
+      }
+    ],
+    "eligible": [
+      "baseline",
+      "heavy",
+      "medium"
+    ],
+    "pareto_frontier": [
+      "baseline"
+    ],
+    "selected": {
+      "lite": "baseline",
+      "medium": "baseline",
+      "heavy": "baseline"
+    }
+  }
+}

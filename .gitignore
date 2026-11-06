@@ -1,6 +1,8 @@
 # ===== Build Output =====
 out/
 dist/
+dist-3d/
+dist-3d-final/
 build/
 *.tsbuildinfo
 

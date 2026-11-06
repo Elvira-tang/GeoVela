@@ -359,7 +359,7 @@ export const zh = {
     showMapLabels: '地图标注',
     showMapLabelsDesc: '在底图上显示文字标注。',
     threeDMode: '3D 模式',
-    threeDModeDesc: '预留开关，当前默认关闭。启用后可使用三维视角与图层拉伸。',
+    threeDModeDesc: '启用三维视角，并允许 Agent 使用建筑图层拉伸工具。',
     threeDModeComingSoon: '3D 能力暂未开放',
     customTileUrl: '自定义瓦片 URL',
     customTileUrlDesc: '使用自定义 XYZ 瓦片 URL 作为底图。',

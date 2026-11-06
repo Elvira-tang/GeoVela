@@ -1,0 +1,14 @@
+{
+  "run_id": "3c5b52a5",
+  "step": 3,
+  "timestamp": "2026-11-05T20:10:34",
+  "semantic_name": "campus_csv_to_geojson",
+  "script_path": "D:\\Study\\大三\\申威高级语言编译与程序设计\\GIS\\GeoVela\\Data\\CampusMap_Jiangnan_20261105\\script\\20261105-201034-step03-campus_csv_to_geojson.py",
+  "user_message": "加载 📎jiangnan_university_campus.csv到地图上",
+  "has_error": false,
+  "description": "Convert Jiangnan campus CSV (WKT + lon/lat) into polygon/line/point GeoJSON layers.",
+  "persist_requested": true,
+  "workflow": null,
+  "loop_kind": "chat",
+  "tool_call_id": "call_00_N0kikNC2dChoHoFYiV8q0012"
+}
